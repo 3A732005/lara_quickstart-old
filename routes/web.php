@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use app\Models\Task;
+use illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/',function (){
+    //
+});
+
+Route::post('/task',function(Request $request){
+    //
+});
+
+Route::delete('/task/{task}',function(Task $task){
+    //
 });
